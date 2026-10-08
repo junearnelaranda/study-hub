@@ -2,7 +2,7 @@
    LocalStorage is isolated behind load/save helpers so a database adapter can replace it later. */
 const CATS = {
   lines: "Characters' Lines - The Odyssey",
-  oxymorons: "Oxymoronic Expressions - The Bread of Salt",
+  oxymorons: "The Bread of Salt",
   stories: "5 Selected Short Stories",
   history: "History of Greek Literature",
   gods: "Greek Gods and Goddesses",
