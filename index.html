@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f3ec">
+  <title>Study Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#dashboard" data-page="dashboard"><img class="brand-mark" src="logo.png" alt="Study Hub mascot logo"><span><b>Study Hub</b><small>LITERATURE REVIEW</small></span></a>
+      <div class="nav-label">YOUR STUDY SPACE</div>
+      <nav class="side-nav" aria-label="Main navigation">
+        <button data-page="dashboard" class="nav-item active"><span>⌂</span> Dashboard</button>
+        <button data-page="topics" class="nav-item"><span>▤</span> Topics</button>
+        <button data-page="practice" class="nav-item"><span>◉</span> Practice</button>
+        <button data-page="rapid" class="nav-item"><span>ϟ</span> Rapid Fire</button>
+        <button data-page="flashcards" class="nav-item"><span>▱</span> Flashcards</button>
+        <button data-page="exam" class="nav-item"><span>▣</span> Exam Mode</button>
+        <button data-page="mistakes" class="nav-item"><span>×</span> My Mistakes <i id="mistake-count">0</i></button>
+        <button data-page="progress" class="nav-item"><span>▥</span> Progress</button>
+      </nav>
+      <div class="sidebar-bottom"><div class="daily-card"><span>✦ TODAY'S REMINDER</span><p>A little practice each day goes a long way.</p></div><div class="profile"><img class="avatar" src="logo.png" alt=""><div><b>Study Hub</b><small>Saved on this device</small></div></div></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><button class="mobile-menu" id="mobile-menu" aria-label="Open menu">☰</button><div class="crumb"><span>Study space</span><b>/</b><strong id="page-name">Dashboard</strong></div><div class="top-actions"><span class="streak">✦ <span id="streak-number">0 day streak</span></span><button class="icon-btn theme-toggle" data-action="toggle-theme" title="Switch to dark mode" aria-label="Switch to dark mode">☾</button><button class="icon-btn" data-page="settings" title="Settings" aria-label="Settings">⚙</button></div></header>
+      <div id="page-content" class="page-content"></div>
+    </main>
+  </div>
+  <nav class="mobile-nav" aria-label="Mobile navigation"><button data-page="dashboard" class="active"><span>⌂</span>Home</button><button data-page="practice"><span>◉</span>Practice</button><button data-page="flashcards"><span>▱</span>Cards</button><button data-page="progress"><span>▥</span>Progress</button></nav>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
